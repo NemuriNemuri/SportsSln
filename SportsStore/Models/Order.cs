@@ -19,7 +19,7 @@ namespace SportsStore.Models
         public string? City { get; set; }
         [Required(ErrorMessage = "Please enter a state or region.")]
         public string? State { get; set; }
-        public string? Zip { get; set; }
+        public string? ZipCode { get; set; }
         [Required(ErrorMessage = "Please enter a country.")]
         public string? Country {  get; set; }
         public bool GiftWrap { get; set; }
