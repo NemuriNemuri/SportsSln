@@ -1,11 +1,11 @@
 ﻿@model IEnumerable<string>
 
 <div>
-    <a asp-action="Index"
+    <a class="btn btn-block btn-outline-secondary" asp-action="Index"
         asp-controller="Home" asp-route-category="">Home</a>
     @foreach(string category in Model ?? Enumerable.Empty<string>())
     {
-        <a class="@(category == ViewBag.SelectedCategory ? "awawa" : "owowo")"
+        <a class="@(category == ViewBag.SelectedCategory ? "btn-primary" : "btn-outline-secondary")"
             asp-action="Index"
             asp-controller="Home" asp-route-category="@category"
             asp-route-productPage="1">
